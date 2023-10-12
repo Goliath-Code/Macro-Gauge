@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE</title>
+    <!-- <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=blenderborn.com"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media1920.css">
+    <link rel="icon" type="image/x-icon" href="pics/CyanG-icon.png">
+
+   
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="brand-logo">
+                <H2>MACRO</H2>
+                <img src="pics/CyanG.png" alt="">
+                <h2>AUGE</h2>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="app.html"><li class="active">App</li></a>
+                    <a href="#"><li>Repo</li></a>
+    
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container-head">
+            <!-- <h1>MACRO METER</h1> -->
+
+            
+        </div>
+
+        <form id="form" novalidate>
+            <!-- READOUT OF MACROS -->
+            <div class="inner-readout">
+                <div class="form-group-outputs">
+                    
+                    <h2><span id="bmr-output">----</span><span> Kcals</span></h2>
+                    <hr>
+                    <h3>CALORIES</h3>
+                </div>
+                <div class="form-group-outputs">
+                    
+                    <h2><span id="from-protein-count">000</span>-<span id="protein-count">000</span><span>g</span></h2>
+                    <hr>
+                    <h3>PROTEIN</h3>
+                </div>
+                <div class="form-group-outputs">
+                    <h2><span id="from-carb-count">000</span>-<span id="carb-count">000</span><span>g</span></h2>
+                    <hr>
+                    <h3>CARBS</h3>
+                </div>
+                <div class="form-group-outputs">
+                    <h2><span id="from-fat-count">000</span>-<span id="fat-count">000</span><span>g</span></h2>
+                    <hr>
+                    <h3>FATS</h3>
+                </div>
+                <div class="form-group-outputs">
+                    <h2></h2>
+                </div>
+            </div>
+
+
+            <!-- SLIDER CONTAINER HOLDS ALL 4 SLIDERS -->
+            <div class="slider-container">           
+                
+                <!-- BODY WEIGHT -->
+                <div class="form-group">
+                    <label for="weight-kg-slider">Weight in KG</label>
+                    <input type="range" min="0" max="300" value="0" name="body-weight" class="slider-custom" id="weight-kg-slider">
+                    <p><span id="weight-kg-output">0</span> KG</p>
+
+
+
+                </div>
+                <!-- HEIGHT IN CENTIMETERS -->
+                <div class="form-group">
+                    <label for="height-cm-slider">Height in CM</label>
+                    <input type="range" min="0" max="240" value="0" name="height" class="slider-custom" id="height-cm-slider">
+                    <p><span id="height-cm-output">0</span> cm</p>
+
+                </div>
+                <!-- AGE IN YEARS -->
+                <div class="form-group">
+                    <label for="age-slider">Age in Years</label>
+                    <input type="range" min="0"  max="100" value="0" name="age" class="slider-custom" id="age-slider">
+                    <p><span id="age-output">0</span> Years</p>
+
+                </div>
+                <!-- ACTIVITY LEVEL -->
+                <div class="form-group">
+                    <label for="activity">Activity Level</label>
+                    <input type="range" name="" value="0" step="25" id="activity" class="slider-custom" min="0" max="100">
+                    <datalist name="activity-level" id="activity">
+                        <option value="0">Little to No Exercise</option> 
+                        <option value="25" selected>Recreational Exercise</option>
+                        <option value="50">Endurance Athlete</option>
+                        <option value="75">Strength & Power</option>
+                        <option value="100">Ultra-Endurance Athlete</option>
+                    </datalist>
+                    <p><span id="activity-output">Little to no exercise</span></p>
+                </div>   
+
+            </div> 
+
+
+            
+            
+            
+
+
+            <!-- TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT -->
+            <div class="target-container">
+                <!-- CURRENT/ TARGET -->
+                <div class="form-group-2">
+                    <h3>CURRENT</h3>
+                    <h3>TARGET</h3>
+                </div>
+
+                <!-- WEIGHT TARGET -->
+                <div class="form-group-2">
+                    <label for="kg-current">Weight in KG</label>
+                    <input type="number" placeholder="0" title="Auto-updates on Save" name="kg-current" id="kg-current" disabled>
+
+                    <label for="kg-target"></label>
+                    <input type="number" placeholder="0" title="Manual input" name="kg-target" id="kg-target">
+                </div>
+
+                <div class="form-group-2">
+                    <label for="muscle-current">Muscle %</label>
+                    <input type="number" placeholder="0" name="muscle-current" id="muscle-current">
+
+                    <label for="muscle-target"></label>
+                    <input type="number" placeholder="0" title="Manual input" name="muscle-target" id="muscle-target">
+                </div>   
+
+                <div class="form-group-2">
+                    <label for="viceral-fat-current">Viceral Fat %</label>
+                    <input type="number" placeholder="0" title="Manual input" name="viceral-fat-current" id="viceral-fat-current">
+
+                    <label for="viceral-fat-target"></label>
+                    <input type="number" placeholder="0" title="Manual input" name="viceral-fat-target" id="viceral-fat-target">
+                </div>                
+
+                <div class="form-group-2">
+                    <label for="body-fat-current">Body Fat %</label>
+                    <input type="number" placeholder="0" name="body-fat-current" id="body-fat-current">
+
+                    <label for="body-fat-target"></label>
+                    <input type="number" placeholder="0" title="Manual input" name="body-fat-target" id="body-fat-target">
+                </div>                          
+                
+                <div class="form-group-2" title="// 18.5 blue/Underweight // 18.5-24.9 green/ Normal // 25-29.9 yellow/Overweight // 30-34.9 orange/Obese // 35 red/Extremely Obese">
+                    <label for="bmi-current">BMI</label>
+                    <input type="number" placeholder="0" title="Auto-updates on Save" name="bmi-current" id="bmi-current" disabled>
+
+                    <label for="bmi-target"></label>
+                    <input type="number" placeholder="0" title="Manual input" name="bmi-target" id="bmi-target">
+                </div>
+                <p>Set targets manually, Enter current/ target percentage & view at the top of main screen.</p>
+            </div>
+
+
+
+
+
+            <!-- GENDER CONTAINER IS THE BOTTOM DIV OF THE INNER PANEL. -->
+            <div class="gender-container">
+                <!-- GENDER -->
+                <div class="form-group">
+                    <input type="radio" class="radio-button" id="male" name="gender" value="male">
+                    <label for="male">Male</label> 
+                    
+                    <input type="radio" class="radio-button" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <button id="update-button" title="Click Save to update your data">Save</button>
+                    <button class="generate-pdf" id="generate-pdf" title="Download a PDF Report of your stats.">PDF</button>
+
+
+                    
+                </div>
+                
+
+            </div>
+        </form>
+
+
+        <div class="hatch" id="hatch">
+            
+            <div class="hatch-display" id="hatch-display">
+                <div class="button-spin-border">
+                    <button class="open-button" id="open-button">OPEN</button>
+                </div>
+                
+                <div class="button-container">
+                        <div class="top-metric-display" id="top-metric-display">
+                            <h3>Weight: +<span id="weight-display">0</span> kg</h3>
+                            
+                            <h3>Muscle: +<span id="muscle-display">0</span> %</h3>
+                            
+                            <h3>Viceral Fat: <span id="viceral-display">0</span> %</h3>
+                            
+                            <h3>Body Fat: <span id="body-fat-display">0</span> %</h3>
+                        </div>
+                    
+                        <div class="inner-circle">
+                            <h1 id="bmr-output-display">0000</h1>
+                            <p>Calories</p>
+
+                        </div>
+                        <div class="bottom-metric-display" id="bottom-metric-display">
+                            <h3>Protein: <span id="from-protein-display">000</span>-<span id="protein-display">000</span> g</h3>
+                            
+                            <h3>Carbs: <span id="from-carbs-display">000</span>-<span id="carbs-display">000</span> g</h3>
+                            
+                            <h3>Fats: <span id="from-fats-display">000</span>-<span id="fats-display">000</span> g</h3>
+                            
+                            
+                        </div>
+    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="copyright-container">
+                <p>Copyright &copy; Goliath Code 2023</p>
+            </div>
+            
+
+            <div class="footer-name-logo">
+                <p>Stephen Farrell</p>
+            </div>
+            
+
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/ste-f-b7947a288/" target="_blank"><i class="fa-brands fa-3x fa-linkedin"></i></a>
+                <a href="https://github.com/Goliath-Code" target="_blank"><i class="fa-brands fa-3x fa-github"></i></a>           
+            </div>
+            
+
+        </div>
+    </footer>
+   
+
+
+    <!-- Script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+   
+    <script src="pdfScript.js"></script>
+</body>
+</html>

@@ -425,7 +425,7 @@ async function openHatch() {
         }
         if (viewportWidth < 1921) {
             hatch.style.width = "96%";
-            hatch.style.height = "880px";
+            hatch.style.height = "680px";
             hatch.style.margin = "3.5% 2% 2% 1%";
             hatch.style.boxShadow = "inset 0 0 10px #000";
             openBtn.textContent = "CLOSE";
@@ -442,7 +442,7 @@ async function openHatch() {
         if (viewportWidth < 1681) {
             
             hatch.style.width = "96%";
-            hatch.style.height = "860px";
+            hatch.style.height = "710px";
             hatch.style.margin = "3.5% 2% 2% 1%";
             hatch.style.boxShadow = "inset 0 0 10px #000";
             openBtn.textContent = "CLOSE";
@@ -451,7 +451,7 @@ async function openHatch() {
             openBtn.style.border = "2px solid #0ff";
             openBtn.style.backgroundColor = "#333";
             openBtn.style.color = "#0ff";
-            hatch.style.marginTop = "81%";
+            hatch.style.marginTop = "82%";
             hatch.style.transition = "all 3s ease";
             await delay(2000);
             
@@ -500,7 +500,7 @@ async function openHatch() {
             
             await delay(2000);
             hatch.style.width = "calc(100% - 20px)";
-            hatch.style.height = "880px";
+            hatch.style.height = "680px";
             hatch.style.margin = "0";
             hatch.style.boxShadow = "inset 0 0 0px";
             hatch.style.transition = "all 3s ease-in";
@@ -513,11 +513,10 @@ async function openHatch() {
         }
         if (viewportWidth < 1681) {
             hatch.style.marginTop = "2%";
-            hatch.style.transition = "all 3s ease";
             
             await delay(2000);
             hatch.style.width = "calc(100% - 20px)";
-            hatch.style.height = "860px";
+            hatch.style.height = "710px";
             hatch.style.margin = "0";
             hatch.style.boxShadow = "inset 0 0 0px";
             hatch.style.transition = "all 3s ease-in";
@@ -525,7 +524,7 @@ async function openHatch() {
             openBtn.style.padding = "2% 1%";
             openBtn.style.border = "2px solid #aaa";
             openBtn.style.backgroundColor = "lightgrey";
-            openBtn.style.color = "#333";
+            openBtn.style.color = "#333";            
             
         }
         if (viewportWidth < 1441) {

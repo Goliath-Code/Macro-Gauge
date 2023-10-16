@@ -1,0 +1,129 @@
+@media (max-width: 1920px) {
+    .built-with-icons  i {
+        width: 50%;
+        margin: 10% 0 0 0;
+    }
+    .home-app-points li {
+        font-size: 100%;
+        
+    }
+    .home-app-points h1 {
+        font-size: 120%;
+        
+    }
+
+
+    .about-container {
+        margin: 7% auto;
+    }
+
+    .container {
+        margin: 7% auto 2% ;
+        width: 40%;
+        height: 700px;
+        
+    }
+    .form-group-outputs h2{
+        font-size: 110%;
+    }
+    .form-group {
+        margin: 1%;
+        font-size: 80%;
+    }
+    .form-group input {
+        height: 8px;
+    }
+    .form-group-2 {
+        font-size: 80%;
+    }
+    .slider-container p {
+        font-size: 100%;
+        margin: 1.5% 0 0 0;
+    }
+    .button-spin-border {
+        margin: 1% 45%;
+        height: 50px;
+        width: 50px;
+    }
+    .button-spin-border button {
+        font-size: 80%;
+        
+    }
+    .hatch {
+        width: calc(100% - 20px);
+        height: 680px;
+        
+    }
+    .bottom-metric-display h3 {
+        font-size: 110%;
+    }
+    .top-metric-display h3 {
+        font-size: 100%;
+        margin: 2% 3%;
+    }
+    .inner-circle h1{
+        margin: 25% 15% 0;
+        font-size: 550%;    
+    }
+    
+    
+
+
+
+
+
+}
+
+@media (max-width: 1680px) {
+    nav {
+        height: 70px;
+    }
+    footer {
+        height: 100px;
+        margin-top: 3%;
+    }
+
+    .main-home-container {
+        width: 60%;
+    }
+    .brand-logo-header {
+        height: 40px;
+        
+    }
+    .home-app-points {
+        width: 25%;
+        margin-left: 1px;
+    }
+    .home-app-points img {
+        width: 70%;
+    }
+    .container {
+        margin: 5% auto 2% ;
+        width: 50%;
+        height: 730px;
+        
+    }
+    
+    .hatch {
+        /* width: calc(100% - 20px); */
+        height: 710px;
+        
+    }
+    
+    .top-metric-display h3 {
+        font-size: 100%;
+        margin: 2% 4%;
+    }
+    
+    .footer-container {
+        width: 60%;
+        margin: 0 20%;
+    }
+    
+    
+
+
+
+
+
+}

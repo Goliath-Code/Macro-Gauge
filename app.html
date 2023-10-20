@@ -36,16 +36,16 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="container-head">
-            <!-- <h1>MACRO METER</h1> -->
+    <div class="container">       
+        
+        <div class="mobile-clear-top">
 
-            
         </div>
 
+        <div class="form-container">
         <form id="form" novalidate>
             <!-- READOUT OF MACROS -->
-            <div class="inner-readout">
+            <div class="inner-readout ">
                 <div class="form-group-outputs">
                     
                     <h2><span id="bmr-output">----</span><span> Kcals</span></h2>
@@ -125,96 +125,136 @@
             <!-- TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT -->
             <div class="target-container">
                 <!-- CURRENT/ TARGET -->
-                <div class="form-group-2">
-                    <h3>CURRENT</h3>
-                    <h3>TARGET</h3>
+                <div class="form-group-2 ">
+                    
+                    
+
+                    <div class="mobile-view-current">
+                        <h3>CURRENT</h3>
+                    </div>
+
+                    <div class="mobile-view-target">
+                        <h3>TARGET</h3>
+                    </div>
                 </div>
 
                 <!-- WEIGHT TARGET -->
                 <div class="form-group-2">
-                    <label for="kg-current">Weight in KG</label>
-                    <input type="number" placeholder="0" title="Auto-updates on Save" name="kg-current" id="kg-current" disabled>
+                    <div class="mobile-view-current">
+                        <label for="kg-current">Weight in KG</label>
+                        <input type="number" placeholder="0" title="Auto-updates on Save" name="kg-current" id="kg-current" disabled>
+                    </div>
 
-                    <label for="kg-target"></label>
-                    <input type="number" placeholder="0" title="Manual input" name="kg-target" id="kg-target">
+                    <div class="mobile-view-target">
+                        <label for="kg-target"></label>
+                        <input type="number" placeholder="0" title="Manual input" name="kg-target" id="kg-target">
+                    </div>
                 </div>
 
                 <div class="form-group-2">
-                    <label for="muscle-current">Muscle %</label>
-                    <input type="number" placeholder="0" name="muscle-current" id="muscle-current">
+                    <div class="mobile-view-current">
+                        <label for="muscle-current">Muscle %</label>
+                        <input type="number" placeholder="0" name="muscle-current" id="muscle-current">
+                    </div>
 
-                    <label for="muscle-target"></label>
-                    <input type="number" placeholder="0" title="Manual input" name="muscle-target" id="muscle-target">
-                </div>   
-
-                <div class="form-group-2">
-                    <label for="viceral-fat-current">Viceral Fat %</label>
-                    <input type="number" placeholder="0" title="Manual input" name="viceral-fat-current" id="viceral-fat-current">
-
-                    <label for="viceral-fat-target"></label>
-                    <input type="number" placeholder="0" title="Manual input" name="viceral-fat-target" id="viceral-fat-target">
-                </div>                
+                    <div class="mobile-view-target">
+                        <label for="muscle-target"></label>
+                        <input type="number" placeholder="0" title="Manual input" name="muscle-target" id="muscle-target">
+                    </div>
+                </div>
 
                 <div class="form-group-2">
-                    <label for="body-fat-current">Body Fat %</label>
-                    <input type="number" placeholder="0" name="body-fat-current" id="body-fat-current">
+                    <div class="mobile-view-current">
+                        <label for="viceral-fat-current">Viceral Fat %</label>
+                        <input type="number" placeholder="0" title="Manual input" name="viceral-fat-current" id="viceral-fat-current">
+                    </div>
 
-                    <label for="body-fat-target"></label>
-                    <input type="number" placeholder="0" title="Manual input" name="body-fat-target" id="body-fat-target">
-                </div>                          
+                    <div class="mobile-view-target">
+                        <label for="viceral-fat-target"></label>
+                        <input type="number" placeholder="0" title="Manual input" name="viceral-fat-target" id="viceral-fat-target">
+                    </div>
+                </div>          
+
+
+                <div class="form-group-2">
+                    <div class="mobile-view-current">
+                        <label for="body-fat-current">Body Fat %</label>
+                        <input type="number" placeholder="0" name="body-fat-current" id="body-fat-current">
+                    </div>
+
+                    <div class="mobile-view-target">
+                        <label for="body-fat-target"></label>
+                        <input type="number" placeholder="0" title="Manual input" name="body-fat-target" id="body-fat-target">
+                    </div>
+                </div>                    
+
                 
                 <div class="form-group-2" title="// 18.5 blue/Underweight // 18.5-24.9 green/ Normal // 25-29.9 yellow/Overweight // 30-34.9 orange/Obese // 35 red/Extremely Obese">
-                    <label for="bmi-current">BMI</label>
-                    <input type="number" placeholder="0" title="Auto-updates on Save" name="bmi-current" id="bmi-current" disabled>
-
-                    <label for="bmi-target"></label>
-                    <input type="number" placeholder="0" title="Manual input" name="bmi-target" id="bmi-target">
+                    <div class="mobile-view-current">
+                        <label for="bmi-current">BMI</label>
+                        <input type="number" placeholder="0" title="Auto-updates on Save" name="bmi-current" id="bmi-current" disabled>
+                    </div>
+                    <div class="mobile-view-target">
+                        <label for="bmi-target"></label>
+                        <input type="number" placeholder="0" title="Manual input" name="bmi-target" id="bmi-target">
+                    </div>
                 </div>
                 <p>Set targets manually, Enter current/ target percentage & view at the top of main screen.</p>
             </div>
 
-
-
-
-
             <!-- GENDER CONTAINER IS THE BOTTOM DIV OF THE INNER PANEL. -->
             <div class="gender-container">
                 <!-- GENDER -->
-                <div class="form-group">
+                <div class="gender-form-group">
                     <input type="radio" class="radio-button" id="male" name="gender" value="male">
                     <label for="male">Male</label> 
                     
                     <input type="radio" class="radio-button" id="female" name="gender" value="female">
                     <label for="female">Female</label>
 
-                    <button id="update-button" title="Click Save to update your data">Save</button>
-                    <button class="generate-pdf" id="generate-pdf" title="Download a PDF Report of your stats.">PDF</button>
-
-
-                    
+                    <div class="control-buttons">
+                        <button id="update-button" title="Click Save to update your data">Save</button>
+                        <button class="generate-pdf" id="generate-pdf" title="Download a PDF Report of your stats.">PDF</button>
+                    </div>
                 </div>
-                
 
             </div>
         </form>
+    </div>
 
 
         <div class="hatch" id="hatch">
             
-            <div class="hatch-display" id="hatch-display">
-                <div class="button-spin-border">
-                    <button class="open-button" id="open-button">OPEN</button>
-                </div>
+                <div class="hatch-display" id="hatch-display">
+                    <div class="button-spin-border  ">
+                        <button class="open-button" id="open-button">OPEN</button>
+                    </div>
                 
-                <div class="button-container">
+                    <div class="button-container">
                         <div class="top-metric-display" id="top-metric-display">
-                            <h3>Weight: +<span id="weight-display">0</span> kg</h3>
+                            <div class="target-display-group">
+                                <h3>Weight</h3>
+                                <h4>+<span id="weight-display">0</span> kg</h4>
+                            </div>
+                            <div class="target-display-group">
+                                <h3>Muscle</h3>
+                                <h4>+<span id="muscle-display">0</span> %</h4>
+                            </div>
+                            <div class="target-display-group">
+                                <h3>Viceral Fat</h3>
+                                <h4><span id="viceral-display">0</span> %</h4>
+                            </div>
+                            <div class="target-display-group">
+                                <h3>Body Fat</h3>
+                                <h4><span id="body-fat-display">0</span> %</h4>
+                            </div>
                             
-                            <h3>Muscle: +<span id="muscle-display">0</span> %</h3>
                             
-                            <h3>Viceral Fat: <span id="viceral-display">0</span> %</h3>
                             
-                            <h3>Body Fat: <span id="body-fat-display">0</span> %</h3>
+                            
+                            
+                            
+                            
                         </div>
                     
                         <div class="inner-circle">
@@ -223,18 +263,22 @@
 
                         </div>
                         <div class="bottom-metric-display" id="bottom-metric-display">
-                            <h3>Protein: <span id="from-protein-display">000</span>-<span id="protein-display">000</span> g</h3>
-                            
-                            <h3>Carbs: <span id="from-carbs-display">000</span>-<span id="carbs-display">000</span> g</h3>
-                            
-                            <h3>Fats: <span id="from-fats-display">000</span>-<span id="fats-display">000</span> g</h3>
-                            
-                            
-                        </div>
-    
+                            <div class="macro-display-group">
+                                <h3>Protein </h3>
+                                <h4><span id="from-protein-display">000</span> - <span id="protein-display">000</span> g</h4>
+                            </div>
+                            <div class="macro-display-group">
+                                <h3>Carbs</h3>
+                                <h4><span id="from-carbs-display">000</span> - <span id="carbs-display">000</span> g</h4>
+                            </div>
+                            <div class="macro-display-group">
+                                <h3>Fats</h3>
+                                <h4><span id="from-fats-display">000</span> - <span id="fats-display">000</span> g</h4>
+                            </div>                     
+                               
+                    </div>
                 </div>
-
-            </div>
+        </div>
 
 
         </div>
@@ -242,6 +286,12 @@
 
 
     </div>
+
+    
+
+
+
+
 
 
     <footer>

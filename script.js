@@ -406,9 +406,9 @@ async function openHatch() {
 
     // if true then open hatch, else close
     if (openClosed) {
-        if(viewportWidth > 1921){
+        if(viewportWidth > 1400){
             hatch.style.width = "96%";
-            hatch.style.height = "880px";
+            hatch.style.height = "830px";
             hatch.style.margin = "3.5% 2% 2% 1%";
             hatch.style.boxShadow = "inset 0 0 10px #000";
             openBtn.textContent = "CLOSE";
@@ -417,15 +417,15 @@ async function openHatch() {
             openBtn.style.border = "2px solid #0ff";
             openBtn.style.backgroundColor = "#333";
             openBtn.style.color = "#0ff";
-            hatch.style.marginTop = "78%";
+            hatch.style.marginTop = "83%";
             hatch.style.transition = "all 3s ease";
             await delay(2000);
             
             
         }
-        if (viewportWidth < 1921) {
+        if (viewportWidth > 768 && viewportWidth < 992) {
             hatch.style.width = "96%";
-            hatch.style.height = "680px";
+            hatch.style.height = "710px";
             hatch.style.margin = "3.5% 2% 2% 1%";
             hatch.style.boxShadow = "inset 0 0 10px #000";
             openBtn.textContent = "CLOSE";
@@ -434,55 +434,55 @@ async function openHatch() {
             openBtn.style.border = "2px solid #0ff";
             openBtn.style.backgroundColor = "#333";
             openBtn.style.color = "#0ff";
-            hatch.style.marginTop = "85%";
+            hatch.style.marginTop = "87%";
             hatch.style.transition = "all 3s ease";
             await delay(2000);           
             
         }
-        if (viewportWidth < 1681) {
+        // if (viewportWidth < 1681) {
             
-            hatch.style.width = "96%";
-            hatch.style.height = "710px";
-            hatch.style.margin = "3.5% 2% 2% 1%";
-            hatch.style.boxShadow = "inset 0 0 10px #000";
-            openBtn.textContent = "CLOSE";
-            openBtn.style.padding = "2% 0.5%";
-            hatch.style.transition = "all 1s ease-in";
-            openBtn.style.border = "2px solid #0ff";
-            openBtn.style.backgroundColor = "#333";
-            openBtn.style.color = "#0ff";
-            hatch.style.marginTop = "82%";
-            hatch.style.transition = "all 3s ease";
-            await delay(2000);
+        //     hatch.style.width = "96%";
+        //     hatch.style.height = "710px";
+        //     hatch.style.margin = "3.5% 2% 2% 1%";
+        //     hatch.style.boxShadow = "inset 0 0 10px #000";
+        //     openBtn.textContent = "CLOSE";
+        //     openBtn.style.padding = "2% 0.5%";
+        //     hatch.style.transition = "all 1s ease-in";
+        //     openBtn.style.border = "2px solid #0ff";
+        //     openBtn.style.backgroundColor = "#333";
+        //     openBtn.style.color = "#0ff";
+        //     hatch.style.marginTop = "82%";
+        //     hatch.style.transition = "all 3s ease";
+        //     await delay(2000);
             
-        } 
-        if (viewportWidth < 1441) {
-            hatch.style.width = "96%";
-            hatch.style.height = "710px";
-            hatch.style.margin = "3.5% 2% 2% 1%";
-            hatch.style.boxShadow = "inset 0 0 10px #000";
-            openBtn.textContent = "CLOSE";
-            openBtn.style.padding = "2% 0.5%";
-            hatch.style.transition = "all 1s ease-in";
-            openBtn.style.border = "2px solid #0ff";
-            openBtn.style.backgroundColor = "#333";
-            openBtn.style.color = "#0ff";
-            hatch.style.marginTop = "82%";
-            hatch.style.transition = "all 3s ease";
-            await delay(2000);
+        // } 
+        // if (viewportWidth < 1441) {
+        //     hatch.style.width = "96%";
+        //     hatch.style.height = "710px";
+        //     hatch.style.margin = "3.5% 2% 2% 1%";
+        //     hatch.style.boxShadow = "inset 0 0 10px #000";
+        //     openBtn.textContent = "CLOSE";
+        //     openBtn.style.padding = "2% 0.5%";
+        //     hatch.style.transition = "all 1s ease-in";
+        //     openBtn.style.border = "2px solid #0ff";
+        //     openBtn.style.backgroundColor = "#333";
+        //     openBtn.style.color = "#0ff";
+        //     hatch.style.marginTop = "82%";
+        //     hatch.style.transition = "all 3s ease";
+        //     await delay(2000);
             
-        }   
+        // }   
         
     } else {
         
 
-        if(viewportWidth > 1921){
+        if(viewportWidth > 1400){
             hatch.style.marginTop = "2%";
             hatch.style.transition = "all 3s ease";
             
             await delay(2000);
             hatch.style.width = "calc(100% - 20px)";
-            hatch.style.height = "880px";
+            hatch.style.height = "830px";
             hatch.style.margin = "0";
             hatch.style.boxShadow = "inset 0 0 0px";
             hatch.style.transition = "all 3s ease-in";
@@ -494,40 +494,7 @@ async function openHatch() {
             
             
         } 
-        if (viewportWidth < 1921) {
-            hatch.style.marginTop = "2%";
-            hatch.style.transition = "all 3s ease";
-            
-            await delay(2000);
-            hatch.style.width = "calc(100% - 20px)";
-            hatch.style.height = "680px";
-            hatch.style.margin = "0";
-            hatch.style.boxShadow = "inset 0 0 0px";
-            hatch.style.transition = "all 3s ease-in";
-            openBtn.textContent = "OPEN";
-            openBtn.style.padding = "2% 1%";
-            openBtn.style.border = "2px solid #aaa";
-            openBtn.style.backgroundColor = "lightgrey";
-            openBtn.style.color = "#333";
-            
-        }
-        if (viewportWidth < 1681) {
-            hatch.style.marginTop = "2%";
-            
-            await delay(2000);
-            hatch.style.width = "calc(100% - 20px)";
-            hatch.style.height = "710px";
-            hatch.style.margin = "0";
-            hatch.style.boxShadow = "inset 0 0 0px";
-            hatch.style.transition = "all 3s ease-in";
-            openBtn.textContent = "OPEN";
-            openBtn.style.padding = "2% 1%";
-            openBtn.style.border = "2px solid #aaa";
-            openBtn.style.backgroundColor = "lightgrey";
-            openBtn.style.color = "#333";            
-            
-        }
-        if (viewportWidth < 1441) {
+        if (viewportWidth > 768 && viewportWidth < 992) {
             hatch.style.marginTop = "2%";
             hatch.style.transition = "all 3s ease";
             
@@ -544,6 +511,39 @@ async function openHatch() {
             openBtn.style.color = "#333";
             
         }
+        // if (viewportWidth < 1681) {
+        //     hatch.style.marginTop = "2%";
+            
+        //     await delay(2000);
+        //     hatch.style.width = "calc(100% - 20px)";
+        //     hatch.style.height = "710px";
+        //     hatch.style.margin = "0";
+        //     hatch.style.boxShadow = "inset 0 0 0px";
+        //     hatch.style.transition = "all 3s ease-in";
+        //     openBtn.textContent = "OPEN";
+        //     openBtn.style.padding = "2% 1%";
+        //     openBtn.style.border = "2px solid #aaa";
+        //     openBtn.style.backgroundColor = "lightgrey";
+        //     openBtn.style.color = "#333";            
+            
+        // }
+        // if (viewportWidth < 1441) {
+        //     hatch.style.marginTop = "2%";
+        //     hatch.style.transition = "all 3s ease";
+            
+        //     await delay(2000);
+        //     hatch.style.width = "calc(100% - 20px)";
+        //     hatch.style.height = "710px";
+        //     hatch.style.margin = "0";
+        //     hatch.style.boxShadow = "inset 0 0 0px";
+        //     hatch.style.transition = "all 3s ease-in";
+        //     openBtn.textContent = "OPEN";
+        //     openBtn.style.padding = "2% 1%";
+        //     openBtn.style.border = "2px solid #aaa";
+        //     openBtn.style.backgroundColor = "lightgrey";
+        //     openBtn.style.color = "#333";
+            
+        // }
     }    
 }
 

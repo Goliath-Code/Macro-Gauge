@@ -2,6 +2,7 @@
 
 html{
     box-sizing: border-box;
+    height: 100%;
 }
 
 body{
@@ -10,7 +11,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E4E7EB;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23C0C0C0' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 nav, footer {
@@ -44,6 +47,7 @@ p {
 }
 
 footer {
+    margin-top: auto;
     position: relative;
     top: 0;
     left: 0;
@@ -254,11 +258,14 @@ footer {
 
 /* CONTAINER IS THE DIV CONTAINER FOR THE MAIN APP */
 .container {
-    position: relative;
-    width: 40%;
-    height: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 850px;
     border-radius: 11%;
-    margin: 8% 0 4.5% 30%;
+    /* margin: 8% 0 4.5% 30%; */
     border: 10px solid lightgrey;
     box-shadow: inset 0 0 40px #000,
                        0 0 5px #000;
@@ -279,10 +286,10 @@ footer {
     padding: 5% 3%;
     font-family: Arial, Helvetica, sans-serif;
 } */
-.container-head h1{
+/* .container-head h1{
     float: left;
     margin: 6% 2% 0 18%;
-}
+} */
 
 .hatch {
     float: left;
@@ -290,7 +297,7 @@ footer {
     top: 0;
     left: 0;
     width: calc(100% - 20px);
-    height: 880px;
+    height: 830px;
     border-radius: 10%;
     margin: 0;    
     font-family: MuseoModerno, Arial, Helvetica, sans-serif;
@@ -336,6 +343,7 @@ footer {
     background-color: lightgrey;
     
 }
+
 .button-container {
     width: 80%;
     height: 80%;
@@ -349,21 +357,51 @@ footer {
     width: 100%;
     height: 20%;
 }
-.top-metric-display h3 {
+.target-display-group {    
+    text-align: center;
     float: left;
+    padding-top: 3%;
+    width: 25%;
+}
+.target-display-group h3 {
+    /* float: left; */
     color: #000;
-    margin: 4% 0 0 7%;
+    margin-top: 3%;
+    /* width: 100%; */
     
 }
-.bottom-metric-display {
-    width: 100%;
-    height: 20%;
+.target-display-group h4 {
+    color: #000;
+    margin-top: 3%;
+    /* margin: 14% 0 0 8%; */
+    font-size: 80%;
+    /* width: 100%; */
 }
-.bottom-metric-display h3 {
+
+.bottom-metric-display {
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50%;
+}
+
+.macro-display-group {
     float: left;
+    width: 33%;
+}
+.macro-display-group h3 {
     color: #0ff;
-    margin: 14% 0 0 8%;
+    margin: 30% 0 0 0;
+    /* margin: 14% 0 0 8%; */
     font-size: 140%;
+}
+.macro-display-group h4 {
+    color: #0ff;
+    margin-top: 3%;
+    /* margin: 14% 0 0 8%; */
+    font-size: 80%;
 }
 .inner-circle {
     float: left;
@@ -376,10 +414,12 @@ footer {
     box-shadow: 0 0 20px #0ff;
     background: linear-gradient(to top, #0ff, #000) ;
 }
+
 .inner-circle h1{
     margin: 30% 22% 0;
     font-size: 550%;    
 }
+
 .inner-circle p{
     font-size: 130%;    
 }
@@ -389,29 +429,35 @@ footer {
     float: left;
     width: 100%;
 }
+
 .slider-container .form-group {
     width: 100%;
-    height: 15%;
+    height: 5%;
+    margin: 0;
+    padding: 1.5% 0;
 }
+
 .form-group {
     float: left;
     width: 16.6%;
     height: 150px;
     margin-top: 5%;
-    text-align: center;
-    
+    text-align: center;    
 }
+
 .form-group .radio-button {
     width: 20px;
     height: 20px;
 }
+
 .form-group input {
     width: 80%;
     height: 1rem;
-    margin: 0%;
+    margin: 0;
     border-radius: 5px;
     font-size: 1.2rem;
 }
+
 .form-group select {
     width: 80%;
     height: 2.5rem;
@@ -456,7 +502,7 @@ footer {
     float: left;
     width: 100%;
     height: 140px;
-    margin: 5% 0 1% 0;
+    margin: 3% 0 1% 0;
 }
 .target-container p{
     text-align: center;
@@ -484,6 +530,7 @@ footer {
     margin: 10% 30% 0 0;
 }
 .form-group-2 h3{
+    display: flex;
     float: right;
     margin: 18% 10% 0 0;
 }
@@ -510,7 +557,26 @@ footer {
     background-color:  	#0080ff;
     border: none;
 }
-
+/* #################################### */
+.gender-form-group {
+    width: 100%;
+    text-align: center;
+    color: #999;
+}
+.control-buttons {
+    width: 100%;
+    padding: auto 15%;
+}
+.control-buttons button {
+    width: 40% ;
+    padding: 1%;
+    margin: 5% 0 0 0;
+    font-size: 110%;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    background-color: #0080ff;
+}
 
 
 

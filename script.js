@@ -547,6 +547,19 @@ async function openHatch() {
     }    
 }
 
+function toggleBurgerMenu() {
+    const burgerMenu = document.getElementById("burger-menu");
+    burgerMenu.classList.toggle("open-burger-menu");
+    // burgerMenu.style.marginTop = "0vh";
+    burgerMenu.style.transition = "all 3s ease";
+}
+function myFunction(x) {
+    x.classList.toggle("change");
+    toggleBurgerMenu();
+
+}
+
+
 // EVENT LISTENERS
 kgSlider.addEventListener("input", UpdateSlider);
 cmSlider.addEventListener("input", UpdateSlider);

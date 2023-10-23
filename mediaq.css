@@ -363,7 +363,7 @@
 
     /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
     .about-container {
-        margin-top: 18%;
+        margin: 18% 0 25%;
         width: 94%;
     }
 
@@ -435,6 +435,9 @@
     .top-metric-display {
         margin-top: 10%;
     }
+    .top-metric-display h4 {
+        font-size: 150%;
+    }
 
 
     /* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
@@ -442,6 +445,12 @@
         height: 400px;
         width: 400px;
         margin: auto 20%;
+    }
+
+
+    /* BOTTOM ROW OF NUMBERS RETURNED TO THE USER */
+    .bottom-metric-display h4{
+        font-size: 150%;
     }
 
 
@@ -478,27 +487,29 @@
     }
 
 
-    
-    
     /* FOOTER TEXT AND STYLES */
     footer {
-        height: 300px;   
+        margin-top: -20%;
+        padding: 5% 0 0 0;
         background-color: ghostwhite;    
     }
-    .footer-container {
-        height: 300px;
+    .footer-container {       
         flex-direction: column;
     }
     .footer-name-logo,
     .copyright-container,
     .footer-icons {
         width: 200%;
-        height: 50px;
+        /* height: 50px; */
         text-align: center;
         justify-content: center;     
     }
     .footer-icons {
-        padding-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        color: red;
     }
     .footer-name-logo p {
         margin: 0;
@@ -507,6 +518,14 @@
     .copyright-container p {
         margin: 0;
         
+    }
+    .fa-linkedin {
+        margin: 0 80%;
+        color: #0072b1;
+    }
+    .fa-github {
+        margin: 0 80%;
+        color: #171515;
     }
 
 
@@ -635,11 +654,53 @@
         width: 100%;
         padding: 5% 0;
     }
+
+
+    .macro-gauge-display {
+        height: 100vh;
+    }
+
+    /* TOP ROW OF NUMBERS RETURNED TO THE USER */
+    .top-metric-display {
+        margin-top: 20%;
+    }
+    .top-metric-display h3 {
+        font-size: 100%;
+    }
+    .top-metric-display h4 {
+        font-size: 100%;
+    }
     
     
     /* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
     .inner-circle {
-        margin: auto 13%;
+        position: relative;
+        top: 8%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 300px;
+    }
+    .inner-circle h1{
+        margin: 25% 22% 0;
+        font-size: 500%;    
+    }
+    .inner-circle p{
+        margin-top: 0;
+        font-size: 130%;    
+    }
+
+    /* BOTTOM ROW OF NUMBERS RETURNED TO THE USER */
+    .bottom-metric-display {
+        margin-top: 100px;
+        font-size: 70%;
+    }
+
+
+    /*  INNER READOUT IS THE TOP ROW OF USER INFOR WITHIN THE APP AFTER THE APP IS OPENED */
+    .inner-readout h2 {
+        font-size: 100%;
+        margin-top: 50%;
     }
 
 
@@ -647,6 +708,9 @@
     .slider-container {
         width: 90%;
         margin-left: 2%;
+    }
+    .slider-container input {
+        width: 90%;
     }
 
     
@@ -718,7 +782,6 @@
     .inner-circle {
         height: 290px;
         width: 290px;
-        margin: auto 2%;
     }
     .inner-circle h1 {
         font-size: 500%;
@@ -737,6 +800,8 @@
         font-size: 100%;
     }
 
+
+    
 
   }
   

@@ -1,7 +1,3 @@
-// import { jsPDF } from "jspdf";
-// CREATE THE DAY DATE AND SHOW ON PDF DOCUMENT
-
-
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 const month = currentDate.getMonth();
@@ -23,17 +19,12 @@ const doc = new jsPDF();
 
 function generatePdf(e) {
     e.preventDefault();
-
-    // doc.setTextColor(51,51,51);    // Styling the pdf
     
     // FONT GLOBAL STYLES
     doc.setFont("Arial");
     doc.setFontSize(20);
     doc.setDrawColor(255, 255, 255, 0);
 
-
-    
-    
 
     doc.text("Macro Meter Report", 10, 15);
     doc.setFont("Arial");
@@ -43,7 +34,6 @@ function generatePdf(e) {
     doc.text(formDayDate, 160, 15);
 
     
-
     // METRICS
     doc.setFontSize(15);
     doc.text("Body Metrics", 10, 30);
@@ -64,7 +54,6 @@ function generatePdf(e) {
     doc.text("Carbs:  " + localStorage.getItem("fromCarbsCountSave") + " - " + localStorage.getItem("carbsCountSave"), 10, 106);
     doc.text("Fats:  " + localStorage.getItem("fromFatsCountSave") + " - " + localStorage.getItem("fatsCountSave"), 10, 114);
 
-    
 
     doc.setFontSize(15);
     doc.text("Current Weight & Volume", 10, 138);
@@ -89,49 +78,8 @@ function generatePdf(e) {
     doc.text("Target BMI:  " + localStorage.getItem("bmiTargetSave"), 10, 246);
 
 
-    
-    
-    
-    
-
     doc.save("Macro Meter Report.pdf");
 
 }
 
 genPdf.addEventListener("click", generatePdf);
-
-
-
-//##################################################################################################################################################
-
-// function updateAll() {
-//     // BMR/CALORY UPDATE
-
-
-//     bodyFatTarget.value = localStorage.getItem("bodyFatTargetSave");
-//     viceralFatTarget.value = localStorage.getItem("viceralFatTargetSave");
-//     muscleTarget.value = localStorage.getItem("muscleTargetSave");
-    
-//     // TAKE THESE VALUES FROM THE LOCAL STORAGE AND MINUS THE CURRENT VALUE FROM THE TARGET VALUE,
-//     // DISPLAY THE REMAINING TARGET ON THE FRONT DISPLAY.
-//     const targetKg = localStorage.getItem("kgTargetSave");
-//     const currentKg = localStorage.getItem("kgCurrentSave");
-//     const weightGain = parseInt(targetKg) - parseInt(currentKg);    
-
-//     weightDisplay.textContent = weightGain;    
-
-//     muscleDisplay.textContent = muscleTarget.value - muscleCurrent.value;
-//     viceralDisplay.textContent = viceralFatTarget.value - viceralFatCurrent.value;
-//     bodyFatDisplay.textContent = bodyFatTarget.value - bodyFatCurrent.value;
-
-//     localStorage.setItem("gain-weight", weightGain);
-
-//     let male = localStorage.getItem("maleSave");
-//     let female = localStorage.getItem("femaleSave");
-
-//     femaleGender.checked = JSON.parse(female);
-//     maleGender.checked = JSON.parse(male);
-
-//     updateBmiColors();
-    
-// }

@@ -90,6 +90,9 @@ function bmiCount() {
 
     // SETTING BMI SCORE TO LOCAL STORAGE FOR IT TO BE UPDATE LATER WHEN APP REOPENS
     localStorage.setItem("bmiSave", bmi.toFixed(2));
+
+    // NOTES FOR BMI RANGES
+    
     // 18.5 blue/Underweight
     // 18.5-24.9 green/ Normal
     // 25-29.9 yellow/Overweight
@@ -146,6 +149,7 @@ function harrisBenedict() {
     }
 
 }
+
 
 function macroCounts() {
     if (activitySlider.value == 0) {
@@ -224,6 +228,7 @@ function macroCounts() {
     fatsDisplay.textContent = Math.ceil(fats);
     
 }
+
 
 // UPDATING THE BACKGROUND COLOR OF THE INPUT FIELDS FOR BMI TO INDICATE BMI DANGER LEVELS
 function updateBmiColors() {
@@ -337,8 +342,6 @@ function realTimeUpdate() {
 }
 
 
-
-
 // MAIN UPDATE FUNCTION CONTROLLED BY THE SAVE BUTTON
 function updateButton(e) {
     e.preventDefault();
@@ -361,6 +364,7 @@ function updateButton(e) {
     macroCounts();
     harrisBenedict();
 }
+
 
 // READING THE SLIDER FOR FIVE ACTIVITY LEVELS
 function UpdateSlider() {
@@ -440,39 +444,6 @@ async function openHatch() {
             await delay(2000);           
             
         }
-        // if (viewportWidth < 1681) {
-            
-        //     hatch.style.width = "96%";
-        //     hatch.style.height = "710px";
-        //     hatch.style.margin = "3.5% 2% 2% 1%";
-        //     hatch.style.boxShadow = "inset 0 0 10px #000";
-        //     openBtn.textContent = "CLOSE";
-        //     openBtn.style.padding = "2% 0.5%";
-        //     hatch.style.transition = "all 1s ease-in";
-        //     openBtn.style.border = "2px solid #0ff";
-        //     openBtn.style.backgroundColor = "#333";
-        //     openBtn.style.color = "#0ff";
-        //     hatch.style.marginTop = "82%";
-        //     hatch.style.transition = "all 3s ease";
-        //     await delay(2000);
-            
-        // } 
-        // if (viewportWidth < 1441) {
-        //     hatch.style.width = "96%";
-        //     hatch.style.height = "710px";
-        //     hatch.style.margin = "3.5% 2% 2% 1%";
-        //     hatch.style.boxShadow = "inset 0 0 10px #000";
-        //     openBtn.textContent = "CLOSE";
-        //     openBtn.style.padding = "2% 0.5%";
-        //     hatch.style.transition = "all 1s ease-in";
-        //     openBtn.style.border = "2px solid #0ff";
-        //     openBtn.style.backgroundColor = "#333";
-        //     openBtn.style.color = "#0ff";
-        //     hatch.style.marginTop = "82%";
-        //     hatch.style.transition = "all 3s ease";
-        //     await delay(2000);
-            
-        // }   
         
     } else {
         
@@ -512,46 +483,12 @@ async function openHatch() {
             openBtn.style.color = "#333";
             
         }
-        // if (viewportWidth < 1681) {
-        //     hatch.style.marginTop = "2%";
-            
-        //     await delay(2000);
-        //     hatch.style.width = "calc(100% - 20px)";
-        //     hatch.style.height = "710px";
-        //     hatch.style.margin = "0";
-        //     hatch.style.boxShadow = "inset 0 0 0px";
-        //     hatch.style.transition = "all 3s ease-in";
-        //     openBtn.textContent = "OPEN";
-        //     openBtn.style.padding = "2% 1%";
-        //     openBtn.style.border = "2px solid #aaa";
-        //     openBtn.style.backgroundColor = "lightgrey";
-        //     openBtn.style.color = "#333";            
-            
-        // }
-        // if (viewportWidth < 1441) {
-        //     hatch.style.marginTop = "2%";
-        //     hatch.style.transition = "all 3s ease";
-            
-        //     await delay(2000);
-        //     hatch.style.width = "calc(100% - 20px)";
-        //     hatch.style.height = "710px";
-        //     hatch.style.margin = "0";
-        //     hatch.style.boxShadow = "inset 0 0 0px";
-        //     hatch.style.transition = "all 3s ease-in";
-        //     openBtn.textContent = "OPEN";
-        //     openBtn.style.padding = "2% 1%";
-        //     openBtn.style.border = "2px solid #aaa";
-        //     openBtn.style.backgroundColor = "lightgrey";
-        //     openBtn.style.color = "#333";
-            
-        // }
     }    
 }
 
 function toggleBurgerMenu() {
     const burgerMenu = document.getElementById("burger-menu");
     burgerMenu.classList.toggle("open-burger-menu");
-    // burgerMenu.style.marginTop = "0vh";
     burgerMenu.style.transition = "all 3s ease";
 }
 function myFunction(x) {

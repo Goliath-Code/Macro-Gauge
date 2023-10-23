@@ -406,7 +406,7 @@ async function openHatch() {
 
     // if true then open hatch, else close
     if (openClosed) {
-        if(viewportWidth > 1400){
+        if(viewportWidth > 992){
             hatch.style.width = "96%";
             hatch.style.height = "830px";
             hatch.style.margin = "3.5% 2% 2% 1%";
@@ -423,6 +423,7 @@ async function openHatch() {
             
             
         }
+        
         if (viewportWidth > 768 && viewportWidth < 992) {
             hatch.style.width = "96%";
             hatch.style.height = "710px";
@@ -476,7 +477,7 @@ async function openHatch() {
     } else {
         
 
-        if(viewportWidth > 1400){
+        if(viewportWidth > 992){
             hatch.style.marginTop = "2%";
             hatch.style.transition = "all 3s ease";
             

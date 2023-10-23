@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400;500&family=Foldit:wght@500&family=MuseoModerno:wght@200&family=Noto+Sans+JP:wght@100&family=Press+Start+2P&family=Slackside+One&display=swap');
 
+/* GLOBAL STYLES */
 html{
-    /* box-sizing: border-box; */
     height: 100%;
 }
-
 body{
     position: relative;
     margin: 0;
@@ -17,7 +16,6 @@ body{
     flex-direction: column;
    
 }
-
 nav, footer {
     position: fixed;
     top: 0;
@@ -27,7 +25,6 @@ nav, footer {
     box-shadow: 0 0 10px #000;
     z-index: 100;
 }
-
 nav li, footer li {    
     float: left;
     list-style: none;
@@ -36,7 +33,6 @@ nav li, footer li {
     color: #666;
     font-weight: bold;
 }
-
 nav li:hover {
     color: #0ff;
     cursor: pointer;
@@ -47,7 +43,9 @@ p {
     line-height: 180%;
     letter-spacing: 1px;
 }
-a { text-decoration: none;}
+a { 
+    text-decoration: none;
+}
 footer {
     margin-top: auto;
     position: relative;
@@ -64,7 +62,6 @@ footer {
 }
 
 
-
 /* MAIN MENU TEXT AND STYLES */
 .active {
     border-bottom: 3px solid #0ff;
@@ -76,7 +73,7 @@ footer {
     align-items: center;
     width: 50%;    
 }
-.nav-container, .footer-container {
+.nav-container {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -84,21 +81,9 @@ footer {
     height: 100%;
     margin-left: 25%;
 }
-.footer-container {    
-    height: 60%;
-    
-}
-.main-home-container {    
-    text-align: center;
-    /* width: 56%; */
-    width: 1300px;
-    padding:1% 2%;
-    margin: 6% auto 1%;
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: 1;
-}
 
-/* MAIN PAGE HEADER OVER APP IMAGE */
+
+/* HOME PAGE HEADER OVER APP IMAGE */
 .brand-logo-header {
     display: flex;
     justify-content: center;
@@ -126,7 +111,16 @@ footer {
     border-radius: 5px;
 }
 
+
 /* HOME PAGE/ HERO PAGE MAIN CONTAINER */
+.main-home-container {    
+    text-align: center;
+    width: 1300px;
+    padding:1% 2%;
+    margin: 6% auto 1%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
 .home-container-header {
     width: 100%;
     margin-bottom: 3%;
@@ -145,6 +139,9 @@ footer {
     width: 100%;
     border-radius: 10px;
 }
+
+
+/* DIV HOLDING THE ICONS FOR THE BUILT WITH SECTION */
 .home-built-with {
     position: absolute;    
     top: 0;
@@ -155,7 +152,6 @@ footer {
     height: 100%;
     width: 200px;
 }
-
 .built-with-icons h1 {
     margin: 0;
     font-size: 250%;
@@ -174,6 +170,9 @@ footer {
     margin: 5% 0 0 0;
     font-family: MuseoModerno, Arial, Helvetica, sans-serif;
 }
+
+
+/* HOME APP POINTS IS THE BULLET POINT LIST CONTAINER OF THE HOME PAGE */
 .home-app-points {
     position: absolute;  
     text-align: left;  
@@ -192,7 +191,6 @@ footer {
     width: 80%;
     margin: 0 20%;
 }
-
 .try-button {
     cursor: pointer;
     width: 40%;
@@ -210,10 +208,7 @@ footer {
 }
 
 
-
-
-
-/* BMI CONTAINER IS LOCATED AT THE BOTTOM OF THE ABOUT.HTML PAGE CONATINING FIVE COLOURED DIVS */
+/* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
 .about-container {
     position: relative;
     width: 64%;
@@ -226,6 +221,7 @@ footer {
 }
 
 
+/* BMI CONTAINER HOLDS THE 5 COLOR LEVELS OF THE BMI GAUGE NUMBERS */
 .bmi-container {
     display: flex;
     width: 100%;
@@ -262,11 +258,6 @@ footer {
 }
 
 
-
-
-
-
-
 /* CONTAINER IS THE DIV CONTAINER FOR THE MAIN APP */
 .container {
     position: absolute;
@@ -289,19 +280,8 @@ footer {
     float: left;
     width: 100%;
 }
-/* .container-head button {
-    float: left;
-    cursor: pointer;
-    margin: 2% 0 2% 0%;
-    border-radius: 50%;
-    padding: 5% 3%;
-    font-family: Arial, Helvetica, sans-serif;
-} */
-/* .container-head h1{
-    float: left;
-    margin: 6% 2% 0 18%;
-} */
 
+/* HATCH REFERS TO THE DOOR PANEL THAT DROPS DOWN TO REVEAL THE SLIDERS AND INPUTS BEHIND IT */
 .hatch {
     float: left;
     position: absolute;
@@ -316,7 +296,7 @@ footer {
     border: 10px solid rgb(199, 198, 198);
     overflow: hidden;
 }
-.button-spin-border {    
+.open-close-button {    
     float: left;
     height: 60px;
     width: 60px;
@@ -340,22 +320,24 @@ footer {
     border:2px solid #aaa;
     animation: spin 0s linear ;
 }
-
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 } 
+
+
+/* HATCH DISPLAY CONTAINS EVERYTHING SEEN ON THE FACE OF THE HATCH INCLUDING THE OPEN BUTTON */
 .hatch-display {
     float: left;
     width: 100%;
     height: 100%;
     box-shadow: inset 0 0 5px grey;
     background-color: lightgrey;
-    
 }
 
-.button-container {
+
+/* GAUGE DISPLAY THAT SHOWS THE USER THEIR NUMBERS */
+.macro-gauge-display {
     width: 80%;
     height: 80%;
     margin: 9% 10%;
@@ -364,6 +346,9 @@ footer {
     background: linear-gradient(to top, #000, #0ff) ;
     border: 5px solid rgb(189, 188, 188);
 }
+
+
+/* TOP ROW OF NUMBERS RETURNED TO THE USER */
 .top-metric-display {
     width: 100%;
     height: 20%;
@@ -375,29 +360,24 @@ footer {
     width: 25%;
 }
 .target-display-group h3 {
-    /* float: left; */
     color: #000;
-    margin-top: 3%;
-    /* width: 100%; */
-    
+    margin-top: 3%;   
 }
 .target-display-group h4 {
     color: #000;
     margin-top: 3%;
-    /* margin: 14% 0 0 8%; */
     font-size: 80%;
-    /* width: 100%; */
 }
 
+
+/* BOTTOM ROW OF NUMBERS RETURNED TO THE USER */
 .bottom-metric-display {
-    /* float: left; */
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
     margin-top: 50%;
 }
-
 .macro-display-group {
     float: left;
     width: 33%;
@@ -405,15 +385,15 @@ footer {
 .macro-display-group h3 {
     color: #0ff;
     margin: 30% 0 0 0;
-    /* margin: 14% 0 0 8%; */
     font-size: 140%;
 }
 .macro-display-group h4 {
     color: #0ff;
     margin-top: 3%;
-    /* margin: 14% 0 0 8%; */
     font-size: 80%;
 }
+
+/* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
 .inner-circle {
     float: left;
     width: 50%;
@@ -425,63 +405,16 @@ footer {
     box-shadow: 0 0 20px #0ff;
     background: linear-gradient(to top, #0ff, #000) ;
 }
-
 .inner-circle h1{
     margin: 30% 22% 0;
     font-size: 550%;    
 }
-
 .inner-circle p{
     font-size: 130%;    
 }
 
 
-.slider-container {
-    float: left;
-    width: 100%;
-}
-
-.slider-container .form-group {
-    width: 100%;
-    height: 5%;
-    margin: 0;
-    padding: 1.5% 0;
-}
-
-.form-group {
-    float: left;
-    width: 16.6%;
-    height: 150px;
-    margin-top: 5%;
-    text-align: center;    
-}
-
-.form-group .radio-button {
-    width: 20px;
-    height: 20px;
-}
-
-.form-group input {
-    width: 80%;
-    height: 1rem;
-    margin: 0;
-    border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-.form-group select {
-    width: 80%;
-    height: 2.5rem;
-    margin-bottom: 1%;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.form-group p {
-    margin: 0;
-}
-
-
+/*  INNER READOUT IS THE TOP ROW OF USER INFOR WITHIN THE APP AFTER THE APP IS OPENED */
 .inner-readout{
     float: left;
     width: 100%;
@@ -508,7 +441,48 @@ footer {
 }
 
 
+/* TOP ROW OF NUMBERS RETURNED TO THE USER */
+.slider-container {
+    float: left;
+    width: 100%;
+}
+.slider-container .form-group {
+    width: 100%;
+    height: 5%;
+    margin: 0;
+    padding: 1.5% 0;
+}
+.form-group {
+    float: left;
+    width: 16.6%;
+    height: 150px;
+    margin-top: 5%;
+    text-align: center;    
+}
+.form-group input {
+    width: 80%;
+    height: 1rem;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.form-group select {
+    width: 80%;
+    height: 2.5rem;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.form-group p {
+    margin: 0;
+}
 
+
+
+
+
+
+/* TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT */
 .target-container{
     float: left;
     width: 100%;
@@ -546,29 +520,14 @@ footer {
     margin: 18% 10% 0 0;
 }
 
+
+/* GENDER CONTAINER IS THE BOTTOM DIV OF THE INNER PANEL */
 .gender-container {
     float: left;
     width: 100%;
     height: 150px;
     
 }
-.gender-container .form-group{
-    width: 40%;
-    height: 100%;
-    margin: 1% 0 0 30%;
-}
-.gender-container .form-group button {
-    cursor: pointer;
-    width: 20%;
-    height: 2.5rem;
-    font-size: 1.2rem;
-    color: #fff;
-    margin: 0 0 0 1%;
-    border-radius: 10px;
-    background-color:  	#0080ff;
-    border: none;
-}
-/* #################################### */
 .gender-form-group {
     width: 100%;
     text-align: center;
@@ -590,15 +549,25 @@ footer {
 }
 
 
-
 /* FOOTER TEXT AND STYLES */
-
-.footer-icons a{
-    margin-right: 10%;
-    color: #666;
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    margin-left: 25%;
+}
+.copyright-container {
+    width: 25%;
 }
 .copyright-container p {
     font-size: 80%;
+}
+.footer-name-logo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 .footer-name-logo p {
     font-size: 180%;
@@ -606,29 +575,24 @@ footer {
     color: #222;
     font-family: MuseoModerno, Arial, Helvetica, sans-serif;
 }
-.copyright-container {
-    width: 25%;
-}
-.footer-name-logo {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
 .footer-icons {
     display: flex;
     justify-content: end;
     width: 25%;
 }
+.footer-icons a{
+    margin-right: 10%;
+    color: #666;
+}
+
 
 /* HAMBERGER MENU CSS */
-
 .burger-menu-button {
     width: 35px;
     height: 35px;
     display: none;
     cursor: pointer;
-  }
-  
+  }  
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -655,9 +619,7 @@ footer {
     background-color: #333;
     z-index: 90;
   }
-  .open-burger-menu {
-    margin-top: 0;
-  }
+  
   .burger-menu ul {
     margin-top: 10%;
   }
@@ -666,4 +628,8 @@ footer {
     color: #fff;
     list-style: none;
     text-decoration: none;
+  }
+  /* OPEN BURGER MENU IS ADDED BY JAVASCRIPT TO OPEN THE BURGER MENU */
+  .open-burger-menu {
+    margin-top: 0;
   }

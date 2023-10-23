@@ -1,83 +1,124 @@
-/* Extra large */
+/* XL TO XXL */
 @media (min-width: 992px) and (max-width: 1400px) {
-    
-    
-    .footer-container {
-        width: 80%;
-        margin: 0 10%;
-        
-    }
+    /* MAIN MENU TEXT AND STYLES */
     .nav-menu {
         width: 150%;
     }
     .burger-menu {
-        display: flex;
-        
+        display: flex;        
     }
+
+
+    /* HOME PAGE/ HERO PAGE MAIN CONTAINER */
     .main-home-container {    
         margin-top: 15%;
         width: 920px;
     }
+
+
+    /* DIV HOLDING THE ICONS FOR THE BUILT WITH SECTION */
     .home-built-with {
         left: 2%;
     }
     .built-with-icons {
         height: auto;
-        width: 200px;
-        
+        width: 200px;        
     }
     .built-with-icons i {
         width: 40%;
         margin: 10% 0 0 0;
     }
 
+
+    /* HOME APP POINTS IS THE BULLET POINT LIST CONTAINER OF THE HOME PAGE */
     .home-app-points {
         width: 25%;
     }
     .home-app-points h1 {
-        font-size: 130%;
-        
+        font-size: 130%;        
     }
     .home-app-points li {
-        font-size: 110%;
-        
+        font-size: 110%;        
     }
     .home-app-points img {
         width: 60%;
         margin: 0 20%;
     }
 
+
+    /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
     .about-container {
         margin-top: 12%;
         width: 80%;
     }
+
+
+    /* BMI CONTAINER HOLDS THE 5 COLOR LEVELS OF THE BMI GAUGE NUMBERS */
     .bmi-container h3{
         font-size: 90%;
+    }
+
+
+    /* FOOTER TEXT AND STYLES */
+    .footer-container {
+        width: 80%;
+        margin: 0 10%;
+        
     }
     
   }
 
-/* Large */
+/* LARGE */
 @media (min-width: 768px) and (max-width: 992px) {
-    .footer-container {
+    
+    /* MAIN MENU TEXT AND STYLES */
+    .nav-menu {
+        display: none;
+    }
+    .nav-container {
+        justify-content: start;
         width: 100%;
         margin: 0;
+        background-color: #fff;
     }
-    .copyright-container {
-        width: 30%;
+    .active {
+        border-bottom: 0;
+        color: #0ff !important;
+        border-radius: 20px;
+        background-color: #222;
     }
-    .footer-name-logo {
-        width: 45%;
+    .brand-logo {
+        justify-content: center;
+        margin: 0 5%;
+        width: auto;
+        width: 90%;
+        height: 100%;
+    }
+    .brand-logo img {
+        width: 40px;
+        margin: 0;
+    }
+    .burger-menu-button {
+        margin: 0 0 0 10%;
+        display: block;
+    }
+    .burger-menu {
+        text-align: center;
+    }
+    .burger-menu ul {
+        margin: 20% 0;
+        width: 90%;
+        font-size: 500%;
+        text-decoration: none;
+    }    
+    .burger-menu li {
+        margin: 5% 0;
+        text-transform: uppercase;
+        
     }
 
-    .about-container {
-        margin-top: 15%;
-        width: 94%;
-    }
-    .bmi-container h3{
-        font-size: 85%;
-    }
-
+    
+    /* HOME PAGE/ HERO PAGE MAIN CONTAINER */
     .main-home-container {    
         margin-top: 15%;
         width: 720px;
@@ -86,11 +127,13 @@
     .home-image {
         float: left;
     }
+
+
+    /* DIV HOLDING THE ICONS FOR THE BUILT WITH SECTION */
     .home-built-with {
         position: absolute;
         left: 0;
         width: 50%;
-        /* background-color: lime; */
     }
     .built-with-icons {
         font-size: 1rem;
@@ -110,12 +153,14 @@
     .built-with-icons h3{
         font-size: 100%;
     }
+
+
+    /* HOME APP POINTS IS THE BULLET POINT LIST CONTAINER OF THE HOME PAGE */
     .home-app-points {
         position: absolute;
         top: 105%;
         left: 5%;
         width: 100%;
-        /* background-color: blue; */
     }
     .home-app-points h1 {
         font-size: 180%;
@@ -130,8 +175,101 @@
         display: none;
     }
     
+    
+    /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
+    .about-container {
+        margin-top: 15%;
+        width: 94%;
+    }
+
+
+    /* BMI CONTAINER HOLDS THE 5 COLOR LEVELS OF THE BMI GAUGE NUMBERS */
+    .bmi-container h3{
+        font-size: 85%;
+    }
+
+
+    /* CONTAINER IS THE DIV CONTAINER FOR THE MAIN APP */
+    .container {
+        width: 730px;
+        height: 730px;
+    }
+
+
+    /* HATCH REFERS TO THE DOOR PANEL THAT DROPS DOWN TO REVEAL THE SLIDERS AND INPUTS BEHIND IT */
+    .hatch {
+        height: 710px;
+        
+    }
+
+
+    /* MAIN CONTAINER HOLDING THE FORM WITHIN THE APP */
+    .form-container {
+        margin-top: 10%;
+    }
+    
+
+    /* TOP ROW OF NUMBERS RETURNED TO THE USER */
+    .slider-container {
+        font-size: 80%;
+    }
+    .slider-container input {
+        height: 8px;
+    }
+
+
+    /* TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT */
+    .target-container {
+        font-size: 80%;
+    }
+    .target-container input {
+        font-size: 1rem;
+        height: 1.5rem;
+    }
+    .form-group-outputs h2 {
+        font-size: 100%;
+    }
+
+
+    /* THE CONTROL BUTTON DIV CONTAINS THE SAVE AND PDF BUTTONS */
+    .control-buttons button{
+        margin-top: 1%;
+    }
+
+
+    /* FOOTER TEXT AND STYLES */
+    footer {
+        background-color: #fff;
+    }
+    .footer-container {
+        width: 100%;
+        margin: 0;
+    }
+    .copyright-container {
+        width: 30%;
+    }
+    .footer-name-logo {
+        width: 45%;
+    }
+    
+  }
+
+/* MEDIUM */
+@media (max-width: 768px) {
+    /* MAIN MENU TEXT AND STYLES */
+    nav {
+        height: 80px;
+        background: none;
+        box-shadow: 0 0 0;
+    }
     .nav-menu {
         display: none;
+    }
+    .nav-container {
+        justify-content: start;
+        width: 100%;
+        margin: 0;
+        background-color: #fff;
     }
     .active {
         border-bottom: 0;
@@ -145,22 +283,11 @@
         width: auto;
         width: 90%;
         height: 100%;
-        /* background-color: lime; */
     }
     .brand-logo img {
         width: 40px;
         margin: 0;
     }
-    .nav-menu {
-        display: none;
-    }
-    .nav-container {
-        justify-content: start;
-        width: 100%;
-        margin: 0;
-        background-color: #fff;
-    }
-    
     .burger-menu-button {
         margin: 0 0 0 10%;
         display: block;
@@ -174,92 +301,37 @@
         font-size: 500%;
         text-decoration: none;
     }
-    
     .burger-menu li {
-        margin: 5% 0;
+        margin: 5% 0 0 -2%;
         text-transform: uppercase;
-        
     }
-    .container {
-        width: 730px;
-        height: 730px;
-    }
-    .hatch {
-        height: 710px;
-        
-    }
-    .form-container {
-        margin-top: 10%;
-    }
-    .form-group-outputs h2 {
-        font-size: 100%;
-    }
-    .slider-container {
-        font-size: 80%;
-    }
-    .slider-container input {
-        height: 8px;
-    }
-    .target-container {
-        font-size: 80%;
-    }
-    .target-container input {
-        font-size: 1rem;
-        height: 1.5rem;
-    }
-    .control-buttons button{
-        margin-top: 1%;
-    }
-    footer {
-        background-color: #fff;
-    }
-    
-  }
 
-/* Medium */
-@media (max-width: 768px) {
-    .bmi-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    .bmi-container h3{
-        font-size: 100%;
-    }
-    .underweight-bmi,
-    .normal-bmi,
-    .overweight-bmi,
-    .obese-bmi,
-    .extremelyobese-bmi {
-        width: 100%;
-        padding: 5% 0;
-    }
-    
 
-    .about-container {
-        margin-top: 18%;
-        width: 94%;
-    }
-    /* .bmi-container h3{
-        font-size: 70%;
-        text-align: center;
-    } */
-
+    /* HOME PAGE MAIN CONTAINER */
     .main-home-container {    
         margin-top: 15%;
         width: 90%;
         height: 1100px;
     }
-    
+
+
+    /* HOME PAGE HEADER OVER APP IMAGE */
+    .brand-logo-header h1 {
+        font-size: 150%;
+    }
+    .brand-logo-header h2 {
+        font-size: 100%;
+    }    
+
+
+    /* DIV HOLDING THE ICONS FOR THE BUILT WITH SECTION */
     .built-with-icons {
         width: 30%;
     }
     .built-with-icons i {
         margin: 10% 0 0 0;
         font-size: 250%;
-    }
-    
+    }    
     .built-with-icons h3,
     .built-with-icons h1 {
         font-size: 150%;
@@ -267,6 +339,9 @@
     .built-with-icons h3{
         font-size: 100%;
     }
+
+
+    /* HOME APP POINTS IS THE BULLET POINT LIST CONTAINER OF THE HOME PAGE */
     .home-app-points {
         position: absolute;
         top: 105%;
@@ -284,79 +359,36 @@
     .home-app-points img {
         display: none;
     }
-    .brand-logo-header h1 {
-        font-size: 150%;
+    
+
+    /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
+    .about-container {
+        margin-top: 18%;
+        width: 94%;
     }
-    .brand-logo-header h2 {
+
+
+    /* BMI CONTAINER HOLDS THE 5 COLOR LEVELS OF THE BMI GAUGE NUMBERS */
+    .bmi-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .bmi-container h3{
         font-size: 100%;
     }
-    
-
-
-
-    .nav-menu {
-        display: none;
-    }
-    .active {
-        border-bottom: 0;
-        color: #0ff !important;
-        border-radius: 20px;
-        background-color: #222;
-    }
-    .brand-logo {
-        justify-content: center;
-        margin: 0 5%;
-        width: auto;
-        width: 90%;
-        height: 100%;
-        /* background-color: lime; */
-    }
-    .brand-logo img {
-        width: 40px;
-        margin: 0;
-    }
-    .nav-menu {
-        display: none;
-    }
-    .nav-container {
-        justify-content: start;
+    .underweight-bmi,
+    .normal-bmi,
+    .overweight-bmi,
+    .obese-bmi,
+    .extremelyobese-bmi {
         width: 100%;
-        margin: 0;
-        background-color: #fff;
+        padding: 5% 0;
     }
     
-    .burger-menu-button {
-        margin: 0 0 0 10%;
-        display: block;
-    }
-    .burger-menu {
-        text-align: center;
-    }
-    .burger-menu ul {
-        margin: 20% 0;
-        width: 90%;
-        font-size: 500%;
-        text-decoration: none;
-    }
     
-    .burger-menu li {
-        margin: 5% 0 0 -2%;
-        text-transform: uppercase;
-        
-    }
-    nav {
-        height: 80px;
-        background: none;
-        box-shadow: 0 0 0;
-    }
-        
-    .nav-menu {
-        display: none;
-    }
-    
-    .form-container {
-        margin-top: 10%;
-    }
+    /* CONTAINER IS THE DIV CONTAINER FOR THE MAIN APP */
     .container {
         display: flex;
         flex-direction: column;
@@ -369,57 +401,71 @@
         transform: translate(0, 0);
         overflow: visible;
     }
+    
+
+    /* MAIN CONTAINER HOLDING THE FORM WITHIN THE APP */
     .form-container {
         height: 50%;
         margin-top: 800px;
     }
-    .button-spin-border {
-        display: none;
-    }
+
+
+    /* HATCH REFERS TO THE DOOR PANEL THAT DROPS DOWN TO REVEAL THE SLIDERS AND INPUTS BEHIND IT */
     .hatch {
-        /* position: fixed;
-        top: 0;
-        left: 0; */
         width: 100vw;
         border: none;
         border-radius: 0;
-        /* margin-top: -800px; */
     }
-    .button-container {
+    .open-close-button {
+        display: none;
+    }
+
+
+    /* GAUGE DISPLAY THAT SHOWS THE USER THEIR NUMBERS */
+    .macro-gauge-display {
         border: none;
         border-radius: 0;
         width: 100vw;
         height: 100%;
         margin: 0;
     }
+
+
+    /* TOP ROW OF NUMBERS RETURNED TO THE USER */
     .top-metric-display {
         margin-top: 10%;
     }
+
+
+    /* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
     .inner-circle {
         height: 400px;
         width: 400px;
         margin: auto 20%;
     }
-    .target-container {
-        height: auto;
-    }
+
+
+    /*  INNER READOUT IS THE TOP ROW OF USER INFOR WITHIN THE APP AFTER THE APP IS OPENED */
     .inner-readout h2 {
         font-size: 100%;
         margin-top: 50%;
     }
+
+
+    /* TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT */
+    .target-container {
+        height: auto;
+    }    
     .form-group-2 {
         display: flex;
-        /* text-align: center; */
         margin: 0;
         width: 100%;
         border-width: 2px 0;
         border-style: solid;
         border-color: #222;
         padding: 1% 0;
-        /* height: 500px; */
     }
     .form-group-2 h3 {
-        /* text-align: center; */
         float: none;
         margin: 0;
     }
@@ -428,9 +474,43 @@
         margin: 0;
     }
     .form-group-2 label {
-        /* width: 50px; */
         margin: 0 5%;
     }
+
+
+    
+    
+    /* FOOTER TEXT AND STYLES */
+    footer {
+        height: 300px;   
+        background-color: ghostwhite;    
+    }
+    .footer-container {
+        height: 300px;
+        flex-direction: column;
+    }
+    .footer-name-logo,
+    .copyright-container,
+    .footer-icons {
+        width: 200%;
+        height: 50px;
+        text-align: center;
+        justify-content: center;     
+    }
+    .footer-icons {
+        padding-top: 10%;
+    }
+    .footer-name-logo p {
+        margin: 0;
+        
+    }
+    .copyright-container p {
+        margin: 0;
+        
+    }
+
+
+    /* CURRENT AND TARGET INPUT ADJUSTMENTS DIVS FOR MOBILE VIEWING */
     .mobile-view-current,
     .mobile-view-target {
         display: flex;
@@ -439,103 +519,69 @@
         align-items: center;
         min-width: 60%;
         height: 50px;
-        
     }
     .mobile-view-target {
         min-width: 40%;
         
     }
     .mobile-view-current input {
-        /* justify-content: end; */
-        /* align-items: end; */
         float: right;
-    }
-    footer {
-        height: 300px;   
-        background-color: ghostwhite;    
-    }
-    .footer-container {
-        height: 300px;
-        /* width: 100%; */
-        /* margin: 1600px 0; */
-        color: #fff;
-        display:flex;
-        margin-top: -12%;
-        flex-direction: column;
-    }
-    .footer-name-logo,
-    .copyright-container,
-    .footer-icons {
-        width: 200%;
-        height: 50px;
-        
-        color: #000;
-        text-align: center;
-        justify-content: center;
-        
-        
-    }
-    .footer-icons {
-        padding-top: 10%;
-    }
-    .footer-name-logo p {
-        color: #000;
-        margin: 0;
-        
-    }
-    .copyright-container p {
-        margin: 0;
-        
     }
   }
 
-  /* Small */
+  /* SMALL */
 @media (max-width: 576px) {
     body {
         background: none;
     }
-    .about-container {
-        margin-top: 20%;
-        width: 98%;
-        box-shadow: 0 0 0;
+    /* MAIN MENU TEXT AND STYLES */
+    .active {
+        border-bottom: 0;
+        color: #0ff !important;
+        border-radius: 20px;
+        background-color: #222;
     }
-    .bmi-container {
-        display: flex;
-        flex-direction: column;
-        width: 94%;
-        height: auto;
+    .burger-menu-button {
+        margin: 0 0 0 10%;
+        display: block;
     }
-    .bmi-container h3{
-        font-size: 85%;
+    .burger-menu {
+        text-align: center;
     }
-    .underweight-bmi,
-    .normal-bmi,
-    .overweight-bmi,
-    .obese-bmi,
-    .extremelyobese-bmi {
-        width: 100%;
-        padding: 5% 0;
+    .burger-menu ul {
+        margin: 20% 0;
+        width: 80%;
+        font-size: 400%;
     }
     
-
+    
+    /* HOME PAGE/ HERO PAGE MAIN CONTAINER */
     .main-home-container {    
         margin-top: 20%;
         width: 100%;
-        /* height: 1100px; */
     }
     .main-home-container button {
-        /* border-radius: 10px; */
-        /* margin: 0; */
         width: 90%;
         text-align: center;
     }
-    
-    
+    .brand-logo-header h1 {
+        font-size: 150%;
+    }
+    .brand-logo-header h2 {
+        font-size: 100%;
+    }
+    .brand-logo-header img {
+        width: 7%;
+        box-shadow: 0 0 10px #0ff;
+    }
     
     .brand-logo-header h2,
     .home-built-with{
         display: none;
     }
+
+
+    /* HOME APP POINTS IS THE BULLET POINT LIST CONTAINER OF THE HOME PAGE */
     .home-app-points {
         position: absolute;
         top: 105%;
@@ -561,67 +607,54 @@
         text-shadow: 0 0 10px #000;
         box-shadow: inset 0 0 10px #000;
     }
-    .brand-logo-header h1 {
-        font-size: 150%;
+
+
+    /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
+    .about-container {
+        margin-top: 20%;
+        width: 98%;
+        box-shadow: 0 0 0;
     }
-    .brand-logo-header h2 {
-        font-size: 100%;
+
+
+    /* BMI CONTAINER HOLDS THE 5 COLOR LEVELS OF THE BMI GAUGE NUMBERS */
+    .bmi-container {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        height: auto;
     }
-    .brand-logo-header img {
-        width: 7%;
-        box-shadow: 0 0 10px #0ff;
+    .bmi-container h3{
+        font-size: 85%;
     }
-    
-    .active {
-        border-bottom: 0;
-        color: #0ff !important;
-        border-radius: 20px;
-        background-color: #222;
-    }
-    
-    
-    
-    
-    
-    .burger-menu-button {
-        margin: 0 0 0 10%;
-        display: block;
-    }
-    .burger-menu {
-        text-align: center;
-    }
-    .burger-menu ul {
-        margin: 20% 0;
-        width: 80%;
-        font-size: 400%;
-        /* text-decoration: none; */
+    .underweight-bmi,
+    .normal-bmi,
+    .overweight-bmi,
+    .obese-bmi,
+    .extremelyobese-bmi {
+        width: 100%;
+        padding: 5% 0;
     }
     
     
+    /* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
     .inner-circle {
         margin: auto 13%;
     }
+
+
+    /* TOP ROW OF NUMBERS RETURNED TO THE USER */
     .slider-container {
         width: 90%;
         margin-left: 2%;
     }
+
+    
     
   }
-/* Extra small */
-@media (max-width: 320px) {
-
-    .about-container h3 {
-        font-size: 120%;
-    }
-    .about-container p {
-        font-size: 90%;
-        line-height: 150%;
-    }
-    .main-home-container {    
-        margin-top: 30%;
-        /* width: 100%; */
-        /* height: 1100px; */
-    }
+/* IPHONE */
+@media (max-width: 320px) {    
+    /* MAIN MENU TEXT AND STYLES */
     .brand-logo h2,
     .brand-logo img,
     .brand-logo-header h2,
@@ -629,11 +662,7 @@
     .main-home-container img{
         display: none;
     }
-    .home-app-points li {
-        font-size: 160%;
-        margin-left: -10%;
-        line-height: 330%;
-    }
+    
     .burger-menu-button {
         margin: 0 0 0 0%;
         display: block;
@@ -645,14 +674,47 @@
         margin: 40% 0;
         width: 80%;
         font-size: 300%;
-        /* text-decoration: none; */
     }
     .burger-menu li {
         margin: 15% 0 0 -10%;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;        
     }
 
+
+    /* HOME PAGE/ HERO PAGE MAIN CONTAINER */
+    .main-home-container {    
+        margin-top: 30%;
+    }
+    .home-app-points li {
+        font-size: 160%;
+        margin-left: -10%;
+        line-height: 330%;
+    }
+
+
+    /* ABOUT PAGE CONTAINER HOLDING SOME BASIC INFO ON FITNESS ELEMENTS OF THE APP */
+    .about-container h3 {
+        font-size: 120%;
+    }
+    .about-container p {
+        font-size: 90%;
+        line-height: 150%;
+    }
+
+
+    /* HATCH REFERS TO THE DOOR PANEL THAT DROPS DOWN TO REVEAL THE SLIDERS AND INPUTS BEHIND IT */
+    .hatch {
+        height: 750px;
+    }
+
+
+    /* GAUGE DISPLAY THAT SHOWS THE USER THEIR NUMBERS */
+    .macro-gauge-display {
+        padding-top: 10%;
+    }
+
+
+    /* CIRCLE CONTAINING CENTERED NUMBER OF CALORIES RETURNED TO THE USER */
     .inner-circle {
         height: 290px;
         width: 290px;
@@ -665,17 +727,16 @@
     .inner-circle p {
         margin: 0;
     }
-    .hatch {
-        height: 750px;
-    }
-    .button-container {
-        padding-top: 10%;
-    }
+    
+    
+    /* TARGET CONTAINER HOLDS THE CURRENT AND TARGET FIELDS FROM LEFT TO RIGHT */
     .target-display-group {
         width: 50%;
     }
     .target-display-group h3 {
         font-size: 100%;
     }
+
+
   }
   
